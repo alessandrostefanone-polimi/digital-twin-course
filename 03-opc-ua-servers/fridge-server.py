@@ -6,7 +6,7 @@ async def main():
     # Create and initialize OPC UA Server
     server = Server()
     await server.init()
-
+                
     # Configuration of the endpoint of the server
     server.set_endpoint("opc.tcp://0.0.0.0:3005/factory/server")
     server.set_server_name("MyFactory Server")
